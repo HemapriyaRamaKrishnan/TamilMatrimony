@@ -1,0 +1,59 @@
+[
+    {
+      "id": 0,
+      "name": "Naziriya",
+      "age": "21 yrs",
+      "height": "5ft 2in",
+      "Religion": "Tamil",
+      "caste": "vanniyar",
+      "Qualification": "MBBS",
+      "Profession": "Doctor",
+      "image": "assets/images/naz.jpg",
+      "state": "Tamil Nadu",
+      "city": "Chennai",
+     "country": "India"
+    },
+    {
+        "id": 1,
+        "name": "Sandhiya",
+        "age": "25 yrs",
+        "height": "5.1ft 3in",
+        "Religion": "Tamil",
+        "caste": "Naidu",
+        "Qualification": "MCA",
+        "Profession": "Professor",
+        "image": "assets/images/girl.jpg",
+        "state": "Tamil Nadu",
+        "city": "Theni",
+       "country": "India"
+      },
+      {
+        "id": 2,
+        "name": "Angel",
+        "age": "26 yrs",
+        "height": "5ft 2in",
+        "Religion": "Christain",
+        "caste": "RC",
+        "Qualification": "MCA",
+        "Profession": "Software Developer",
+        "image":"assets/images/amir.jpg" ,
+        "state": "Tamil Nadu",
+        "city": "Tirupur",
+       "country": "India"
+      },
+      {
+        "id": 3,
+        "name": "Reena",
+        "age": "27 yrs",
+        "height": "5ft 2in",
+        "Religion": "Tamil",
+        "caste": "vanniyar",
+        "Qualification": "MBBS",
+        "Profession": "Doctor",
+        "image": "assets/images/pic.jpg",
+        "state": "Tamil Nadu",
+        "city": "Chennai",
+       "country": "India"
+      }
+
+  ]
