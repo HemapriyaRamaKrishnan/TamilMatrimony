@@ -1,50 +1,78 @@
+<div style="background-color: #33a3db;">
+    <div class="row d-flex py-3" style="margin: 0px !important;">
+        <div class="col-12 col-md-6 mx-auto">
+            <div class="row" style="margin: 0px !important;">
+                <div class="col-md-6 col-6 d-flex ">
+                    <h5 class="text-white">My Matches</h5>
+                </div>
+                <div class="col-md-6 col-6 d-flex justify-content-end">
+                    <nb-icon icon="more-vertical-outline" nbTooltip="Information" class="icon-font ms-4 image-cursor text-white">
+                    </nb-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin: 0px !important;">
+        <div class="col-md-6 mx-auto">
+            <div class="row" style="margin: 0px !important;">
+                <div class="col-md-6 col-9 pe-0">
+                    <h5 class="fix-font text-white">8 Profiles pending with me</h5>
+                </div>
+                <div class="col-md-6 col-3 pe-0 my-2 d-flex justify-content-end">
+                    <button nbButton shape="round" size="small" class="pt-0 pb-0" style="background-color: #33a3db; color:white !important;">5 new</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <nb-layout>
-    <nb-layout-column>
-        <div class="row">
-            <div class=" col-xl-7 col-lg-7 col-md-8 col-12 mx-auto p-5 m-3">
-                <nb-card class="p-3" [nbSpinner]="isLoading">
-                    <owl-carousel-o [options]="customOptions">
-                        <ng-container *ngFor="let item of userData">
-                            <ng-template carouselSlide>
-                                <div class="row">
-                                    <div class="col-12 p-0">
-                                        <nb-card class="p-3 m-2 rounded" style="border: none;">
-                                            <img [src]="item.image" alt="userImage" class="image-cursor"
-                                                (click)="clickNext(item)">
-                                            <div class="p-2">
-                                                <h4 class="mt-3">{{item?.name}}</h4>
-                                                <div class="d-flex">
+    <nb-layout-column style="background-color: #33a3db;">
+        <div class="row" style="margin: 0px !important;">
+            <div class=" col-xl-7 col-lg-7 col-md-8 col-12 mx-auto p-5 fix-pad m-3">
+                <nb-card class="p-3 border-none fix-pad-1" style="background-color: #33a3db; border: 0px !important;" [nbSpinner]="isLoading">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-container *ngFor="let item of userData">
+                        <ng-template carouselSlide>
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <nb-card class="pt-0 mx-4 rounded border border-none" style="border: none;">
+                                        <img [src]="item.image" alt="userImage" class="image-cursor btr rounded-top"
+                                            (click)="clickNext(item)">
+                                        <div class="p-2">
+                                            <h4 class="mt-3">{{item?.name}}</h4>
+                                            <div class="d-flex">
+                                                <div>
+                                                    <span class="fw-bold">{{item?.age}}, {{item?.height}},
+                                                        {{item?.Religion}}, {{item?.caste}},</span>
                                                     <div>
-                                                        <span class="fw-bold">{{item?.age}}, {{item?.height}},
-                                                            {{item?.Religion}}, {{item?.caste}},</span>
-                                                        <div>
-                                                            <span class="fw-bold">{{item?.Qualification}},
-                                                                {{item?.Profession}}, {{item?.city}}, </span>
-                                                        </div>
-                                                        <div>
-                                                            <span class="fw-bold">{{item?.state}},
-                                                                {{item?.country}}.</span>
-                                                        </div>
+                                                        <span class="fw-bold">{{item?.Qualification}},
+                                                            {{item?.Profession}}, {{item?.city}}, </span>
                                                     </div>
-                                                </div>
-                                                <div class="d-flex py-2">
                                                     <div>
-                                                        <button nbButton shape="round" class="w-100" status="warning"
-                                                            (click)="clickNext(item,'image')">Yes</button>
-                                                    </div>
-                                                    <div class="ps-2">
-                                                        <button nbButton shape="round" class="w-100"
-                                                            status="basic">No</button>
+                                                        <span class="fw-bold">{{item?.state}},
+                                                            {{item?.country}}.</span>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </nb-card>
-                                    </div>
+                                            <div class="d-flex py-2">
+                                                <div>
+                                                    <button nbButton shape="round" class="w-100" status="warning"
+                                                        (click)="clickNext(item,'image')">Yes</button>
+                                                </div>
+                                                <div class="ps-2">
+                                                    <button nbButton shape="round" class="w-100"
+                                                        status="basic">No</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </nb-card>
                                 </div>
+                            </div>
 
-                            </ng-template>
-                        </ng-container>
-                    </owl-carousel-o>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
                 </nb-card>
             </div>
         </div>
